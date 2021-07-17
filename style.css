@@ -61,13 +61,3 @@ body {
         display: none;
     }
 }
-
-.copyright {
-    position: relative;
-    top: 350px;
-    right: 600px;
-}
-
-p {
-    color: #fff;
-}
