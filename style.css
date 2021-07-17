@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Encode Sans SC', sans-serif;
+    background-image: url(spaceBackground.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.image-container {
+    display: flex;
+    width: 90vw;
+}
+
+.mountain {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #fff;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: zoom-in;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.mountain h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.mountain.active {
+    flex: 5;
+}
+
+.mountain.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px) {
+    .image-container {
+        width: 100vw;
+    }
+    .mountain:nth-of-type(4),
+    .mountain:nth-of-type(5) {
+        display: none;
+    }
+}
+
+.copyright {
+    position: relative;
+    top: 350px;
+    right: 600px;
+}
+
+p {
+    color: #fff;
+}
